@@ -1,3 +1,4 @@
+import com.github.navnesen.sync.Mutex;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.atomic.AtomicReference;
@@ -29,7 +30,7 @@ public class MutexTest {
 		var th = new Thread(() -> {
 			_lockRequested.set(new java.util.Date().getTime());
 			try (var lock = mutex.lock()) {
-				assert lock.mutex != null;
+				// assert lock.mutex != null;
 				_lockReceived.set(new java.util.Date().getTime());
 				assert lock.get() == 0;
 				lock.set(1);

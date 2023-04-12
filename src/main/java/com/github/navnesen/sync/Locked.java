@@ -1,3 +1,5 @@
+package com.github.navnesen.sync;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
