@@ -1,5 +1,7 @@
 # Mutex
 
+> Moved to https://github.com/navnesen/util
+
 A simple mutex implementation that can lock some object to be released later.
 
 ## NOTE ON TESTING
